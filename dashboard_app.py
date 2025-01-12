@@ -270,7 +270,7 @@ if st.session_state.active_page == "New RPH":
 
 elif st.session_state.active_page == "Old RPH":
     st.markdown("<h1 style='text-align: center; color: #1f77b4;'>Old RPH Page</h1>", unsafe_allow_html=True)
-    OLD_RPH_FILE = r"D:\Water-Works Jusco\qUERY - Water Works\Old_rph.xlsx"  # Replace with your file path
+    OLD_RPH_FILE = "https://github.com/Adi0604/Water_Works/raw/refs/heads/main/Old_rph.xlsx"  # Replace with your file path
     data = load_excel_data(OLD_RPH_FILE)
     if not data.empty:
         timestamps_list = data['Date and Time'].drop_duplicates().tolist()
