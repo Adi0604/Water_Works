@@ -244,7 +244,7 @@ with st.sidebar:
 # Page logic
 if st.session_state.active_page == "New RPH":
     st.markdown("<h1 style='text-align: center; color: #1f77b4;'>New RPH Page</h1>", unsafe_allow_html=True)
-    NEW_RPH_FILE = r"D:\Water-Works Jusco\qUERY - Water Works\NEW_RPH_Overview_Flow_DetailsReport (1).xlsx"  # Replace with your file path
+    NEW_RPH_FILE = "https://github.com/Adi0604/Water_Works/raw/refs/heads/main/NEW_RPH_Overview_Flow_DetailsReport%20(1).xlsx"  # Replace with your file path
     data = load_excel_data(NEW_RPH_FILE)
     if not data.empty:
         timestamps_list = data['Date and Time'].drop_duplicates().tolist()
